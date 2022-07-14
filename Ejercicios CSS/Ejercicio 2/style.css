@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.lista :last-child{
+    background-color: rgb(0, 0, 255);
+}
+
+.lista :nth-child(2n+1){
+    text-decoration: underline green;
+}
+
+.lista{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.lista :lang(en){
+    font-size: larger;
+    text-transform: uppercase ;
+}
+
+.lista :nth-child(1)::after{
+    content: "😎";
+}
+
+.lista :nth-child(2)::after{
+    content: "😘";
+}
+
+.lista :nth-child(3)::after{
+    content: "🤣";
+}
+
+.lista :nth-child(4)::after{
+    content: "🕋";
+}
+
+.lista :nth-child(5)::after{
+    content: "🛸";
+}
+
+.lista :nth-child(6)::after{
+    content: "🍔";
+}
+
+#provincias{
+    list-style:upper-roman inside;
+}
+
+#provincias :nth-child(2){
+    list-style: outside;
+}
