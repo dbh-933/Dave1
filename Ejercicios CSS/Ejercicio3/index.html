@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Flex</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+        <fieldset><legend>Personaliza tu hamburguesa</legend>
+            <fieldset><legend>Ingredientes</legend>
+            
+        <ul class="ingredientes">
+        
+            <label for="Queso">Queso</label>
+            <input type="checkbox" name="Queso" id="Queso">
+    
+            <label for="Bacon">Jamón</label>
+            <input type="checkbox" name="Bacon" id="Bacon">
+        
+            <label for="Huevo">Huevo</label>
+            <input type="checkbox" name="Huevo" id="Huevo">
+        
+            <label for="Cebolla">Cebolla</label>
+            <input type="checkbox" name="Cebolla" id="Cebolla">
+
+            <label for="pepinillo">Pepinillo</label>
+            <input type="checkbox" name="pepinillo" id="pepinillo">
+        </ul>
+        </fieldset>
+        <fieldset> <legend>Tamaño</legend>
+        <ul class="ingredientes">
+            <label for="talla">Pequeña</label>
+            <input type="radio" name="talla" id="s">
+            
+            <label for="talla">Mediana</label>
+            <input type="radio" name="talla" id="m">
+
+            <label for="talla">Grande</label>
+            <input type="radio" name="talla" id="l">
+
+        </ul>
+        </fieldset>
+    </fieldset>
+        <fieldset> <legend>Datos de entrega</legend>
+        <ul>
+            <li>
+            <label for="name">Nombre</label><br>
+            <input type="text" id="name" name="nombre">
+             </li>
+             <li>
+            <label for="address">Dirección</label><br>
+            <input type="text" id="address" name="address">
+            </li>
+            <li>
+            <label for="tel">Teléfono</label><br>
+            <input type="tel" id="tel" name="tel">
+            </li>
+            <li>
+            <label for="comments">Instrucciones especiales</label><br>
+            <textarea type="comments" id="comments" name="comments" cols="30" rows="10"></textarea>
+            </li>
+
+        </ul>
+        </fieldset>
+
+
+        <fieldset> <legend>Método de pago</legend>
+
+            <label for="pago"></label>
+            <select name="pago" id="pago">
+                <option>Tarjeta de crédito</option>
+                <option>Paypal</option>
+                <option>Pago efectivo</option>
+                <option>Tarjeta regalo</option>
+            </select>
+        
+        </fieldset>
+
+        <button>Enviar</button>
+
+    </main>
+  </body>
+</html>

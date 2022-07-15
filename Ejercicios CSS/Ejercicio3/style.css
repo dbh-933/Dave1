@@ -1,0 +1,52 @@
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    color: blue;
+}
+
+
+fieldset{
+    border: 0px;
+}
+
+body{
+    background: url(./hamburguesa.png) fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+main > fieldset >  legend{
+    font-weight: bolder;
+    text-transform: uppercase;
+
+}
+
+main > fieldset >  fieldset > legend{
+    font-style: italic;
+    font-size: larger;
+
+}
+
+main fieldset fieldset legend ul li{
+    font-style: italic;
+}
+
+main{
+    text-align: center;
+}
+
+.ingredientes{
+    font-style: italic;
+ }
+
+ 
+
+button{
+    color: white;
+    background-color:mediumblue;
+    padding: 0.6rem 1rem;
+    border: none;
+}
