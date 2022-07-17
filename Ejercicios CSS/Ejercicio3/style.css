@@ -3,46 +3,91 @@
     margin: 0rem;
     padding: 0rem;
     box-sizing: border-box;
-    margin-top: 1rem;
     color: blue;
 }
 
 
-fieldset{
-    border: 0px;
-}
-
 body{
+    min-height: 100vh;
     background: url(./hamburguesa.png) fixed;
     background-size: cover;
     background-position: center;
+    display:flex ;
+    font-family: sans-serif;
+
+}
+
+main{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0rem;
+}
+
+fieldset{
+    width: 100%;
+    border: none;
+    max-width: 25rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+
+}
+legend{
+    text-align: center;
 }
 
 main > fieldset >  legend{
     font-weight: bolder;
     text-transform: uppercase;
+    font-size: larger;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 
 }
 
 main > fieldset >  fieldset > legend{
     font-style: italic;
     font-size: larger;
+    margin: 0.5rem;
 
 }
 
-main fieldset fieldset legend ul li{
+
+form label{
     font-style: italic;
 }
 
-main{
+fieldset fieldset ul{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main > fieldset:nth-child(2) label, main > fieldset:nth-child(2) input, textarea{
+    display: block;
+    width: 100%;
     text-align: center;
+    padding: 0.5rem;
+  }
+
+
+ul{
+    list-style: none;
+    width: 100%;
 }
 
 .ingredientes{
     font-style: italic;
  }
 
- 
+
+select{
+    padding: 0.2rem 0.5rem;
+}
 
 button{
     color: white;
