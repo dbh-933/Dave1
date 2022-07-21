@@ -8,6 +8,8 @@
     background-color: rgb(0, 0, 255);
 }
 
+/*También sirve odd para referirse a los impares*/
+
 .lista :nth-child(2n+1){
     text-decoration: underline green;
 }
