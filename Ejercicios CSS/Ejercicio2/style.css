@@ -23,7 +23,7 @@
 
 
 .lista :lang(en){
-    font-size: larger;
+    font-size: larger; /*200% para el doble de tamaño, es más preciso que el larger*/
     text-transform: uppercase ;
 }
 

@@ -69,12 +69,17 @@ main#about{
     align-items: center;
 }
 
+#about figure{
+    order: -1;
+}
+
 #about img{
-    width: 80vw;
-    height: 80vw;
-    object-fit: cover;
+    width: 20vw;
+    height: 20vw;
+    overflow: hidden;
     border-radius: 50%;
     box-shadow: var(--sombra);
+    object-fit: cover;
 }
 
 #about section{
