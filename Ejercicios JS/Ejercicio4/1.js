@@ -12,14 +12,16 @@ let people = {
     Alex: 10,
   };
 
-function declarar(people){
-  if( (Object.values) >= 18){
-   return String = `${Object.property} es mayor de edad`
+console.log(people)
+
+/*function declarar(people){
+  if( (people) >= 18){
+   return String = `${people} es mayor de edad`
 }else{
-  return String = `${Object.property} es menor de edad`
+  return String = `${people} es menor de edad`
 
 }
 
 }
 
-console.log(declarar(people))
+console.log(Object.entries(people))*/
