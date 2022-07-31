@@ -14,14 +14,27 @@ let people = {
 
 console.log(people)
 
-/*function declarar(people){
-  if( (people) >= 18){
-   return String = `${people} es mayor de edad`
-}else{
-  return String = `${people} es menor de edad`
-
+function checkAge(obj){
+  console.log(obj)
+  for(let name in obj){
+    let age = obj[name]
+    console.log(name, age)
+    if (age < 18){
+      console.log(`${name} es menor de edad`)
+    } else {
+      console.log(`${name} es mayor de edad`)
+    }
+  }
 }
 
+checkAge(people)
+
+function checkTernario(obj){
+  for (let name in obj){
+    let age = obj[name]
+
+    console.log(`${name} es ${age < 18? "menor" : "mayor"} de edad`)
+  }
 }
 
-console.log(Object.entries(people))*/
+checkTernario(people)
