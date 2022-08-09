@@ -79,7 +79,7 @@ SELECT count(id), PAIS FROM Jugador GROUP BY PAIS;
 SELECT d.*, j.NOMBRE FROM Jugador j INNER JOIN Direcciones d ON (d.idJugador = j.id);
 
 /* 6 */
-
+/* debería ser INT UNSIGNED NO CHAR */
 ALTER TABLE Jugador ADD COLUMN AGE CHAR(5);
 
 UPDATE Jugador SET AGE ='30' WHERE id = 1;
