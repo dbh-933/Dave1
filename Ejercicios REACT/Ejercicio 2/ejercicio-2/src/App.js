@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import List from "./components/Lista";
+import Taskdb from "./db/Taskdb";
+import Form from "./components/Form";
 
 function App() {
+  const [tasks, setTasks] = useState(Taskdb);
+
+  console.log(tasks);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>task exercise</h1>
+      <Form tasks={tasks} setTasks={setTasks} />
+      <List tasks={tasks} />
     </div>
   );
 }
+
+/*Primero se hace todo el App salvo el List y el taskdb, que es lo ultimo que se hace*/
 
 export default App;
