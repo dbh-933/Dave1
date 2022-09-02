@@ -1,6 +1,10 @@
 import { useState } from "react";
-UseCounter = () => {
+const initialCount = 0;
+const UseCounter = () => {
   const [count, setCount] = useState(0);
+  const [increase, setIncrease] = useState(0);
+  const [decrease, setDecrease] = useState(0);
+
   return (
     <>
       <h1>Contador: {count}</h1>
