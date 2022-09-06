@@ -1,8 +1,8 @@
 import UseCounter from "../hooks/UseCounter";
 
-const Counter = () => {
+function Counter() {
   const counter = UseCounter();
   return <>{counter}</>;
-};
+}
 
 export default Counter;
