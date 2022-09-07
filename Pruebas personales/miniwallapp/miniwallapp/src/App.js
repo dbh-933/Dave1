@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter, routes, Route, Routes } from "react-router-dom";
 import ProductsPage from "./pages/ProductsPage";
 import RegisterPage from "./pages/RegisterPage";
+import NewProductPage from "./pages/NewProductPage";
 
 function App() {
   return (
